@@ -1,0 +1,21 @@
+/* =========================================================
+   FoodieHub — responsive.css
+   Breakpoints: tablet (<=900px) and mobile (<=600px)
+   ========================================================= */
+
+@media (max-width:900px){
+  .hero-grid, .about-grid{ grid-template-columns:1fr; }
+  .about-grid img{ order:-1; }
+  .cat-grid{ grid-template-columns:repeat(2,1fr); }
+  .dish-grid{ grid-template-columns:repeat(2,1fr); }
+  .why-grid{ grid-template-columns:repeat(2,1fr); }
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+}
+
+@media (max-width:600px){
+  .wrap{ padding:0 20px; }
+  .navbar{ padding:14px 20px; justify-content:center; text-align:center; }
+  .cat-grid, .dish-grid, .why-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr; }
+  .hero-badge{ left:10px; }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment — FoodieHub</title>
+  <meta name="description" content="Complete your FoodieHub order with UPI, card, or cash on delivery. Frontend demonstration only.">
+  <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="navbar">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="FoodieHub logo">
+        FoodieHub
+      </a>
+      <input type="checkbox" id="nav-check" class="nav-toggle-input" style="display:none;">
+      <label for="nav-check" class="nav-toggle" aria-label="Toggle menu"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html" class="nav-cta">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="payment-hero">
+      <div class="container">
+        <span class="eyebrow">Checkout</span>
+        <h1>Complete your payment</h1>
+        <p>This is a frontend demonstration only — no real payment is processed.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="pay-grid">
+          <!-- Payment methods -->
+          <div>
+            <div class="card">
+              <h2>Choose a payment method</h2>
+              <form action="#" method="post">
+                <div class="method-tabs" role="radiogroup" aria-label="Payment method">
+                  <label class="method-tab" for="pm-upi">
+                    <input type="radio" name="payment-method" id="pm-upi" checked>
+                    <span class="m-icon" aria-hidden="true">📲</span>
+                    <span class="m-label">UPI</span>
+                  </label>
+                  <label class="method-tab" for="pm-card">
+                    <input type="radio" name="payment-method" id="pm-card">
+                    <span class="m-icon" aria-hidden="true">💳</span>
+                    <span class="m-label">Card</span>
+                  </label>
+                  <label class="method-tab" for="pm-cod">
+                    <input type="radio" name="payment-method" id="pm-cod">
+                    <span class="m-icon" aria-hidden="true">💵</span>
+                    <span class="m-label">Cash on Delivery</span>
+                  </label>
+                </div>
+
+                <div class="method-panels">
+                  <div class="method-panel" id="panel-upi">
+                    <div class="field">
+                      <label for="upi-id">UPI ID</label>
+                      <input type="text" id="upi-id" name="upi_id" placeholder="yourname@upi">
+                    </div>
+                    <p class="pill-note">You'll receive a payment request on your UPI app to approve.</p>
+                  </div>
+
+                  <div class="method-panel" id="panel-card">
+                    <div class="field">
+                      <label for="card-name">Name on card</label>
+                      <input type="text" id="card-name" name="card_name" placeholder="Jordan Lee">
+                    </div>
+                    <div class="field">
+                      <label for="card-number">Card number</label>
+                      <input type="text" id="card-number" name="card_number" placeholder="1234 5678 9012 3456" inputmode="numeric">
+                    </div>
+                    <div class="field-row">
+                      <div class="field">
+                        <label for="card-expiry">Expiry date</label>
+                        <input type="text" id="card-expiry" name="card_expiry" placeholder="MM/YY">
+                      </div>
+                      <div class="field">
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" id="card-cvv" name="card_cvv" placeholder="123" inputmode="numeric">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="method-panel" id="panel-cod">
+                    <p class="pill-note">Pay in cash to the delivery rider when your order arrives. Please have the exact amount ready if possible.</p>
+                  </div>
+                </div>
+
+                <span class="badge-secure">🔒 Payments are encrypted &amp; secure</span>
+
+                <div class="pay-actions">
+                  <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+                  <a href="index.html" class="btn btn-outline btn-block">Back to Home</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Order summary -->
+          <div>
+            <div class="card">
+              <h2>Order Summary</h2>
+              <ul class="order-list">
+                <li><span>Margherita Pizza</span><span>$8.99</span></li>
+                <li><span>Smoky Cheese Burger</span><span>$6.49</span></li>
+                <li><span>Delivery Fee</span><span>$2.50</span></li>
+              </ul>
+              <div class="order-total">
+                <span>Total Amount</span>
+                <span>$17.98</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 FoodieHub. All rights reserved.</span>
+        <span><a href="legal.html">Terms</a> &middot; <a href="legal.html">Privacy</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

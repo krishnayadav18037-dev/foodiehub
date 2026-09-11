@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — FoodieHub</title>
+  <meta name="description" content="Create a FoodieHub account to start ordering food from local restaurants.">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="navbar">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="FoodieHub logo">
+        FoodieHub
+      </a>
+      <input type="checkbox" id="nav-check" class="nav-toggle-input" style="display:none;">
+      <label for="nav-check" class="nav-toggle" aria-label="Toggle menu"><span></span></label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html" class="nav-cta current" aria-current="page">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="auth-wrap">
+      <section class="auth-visual" aria-hidden="true">
+        <div class="brand">FoodieHub</div>
+        <h2>Join thousands of happy eaters</h2>
+        <p>Create your free account and get access to exclusive deals, faster checkout and order history.</p>
+        <ul>
+          <li>Exclusive member deals</li>
+          <li>One-tap checkout</li>
+          <li>Full order history</li>
+        </ul>
+      </section>
+
+      <section class="auth-form-side">
+        <div class="auth-card">
+          <a href="index.html" class="back-link">&larr; Back to Home</a>
+          <h1>Create account</h1>
+          <p>It only takes a minute to get started.</p>
+
+          <form action="#" method="post">
+            <div class="field">
+              <label for="reg-name">Full name</label>
+              <input type="text" id="reg-name" name="fullname" placeholder="Jordan Lee" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="reg-email">Email address</label>
+              <input type="email" id="reg-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="reg-phone">Phone number</label>
+              <input type="tel" id="reg-phone" name="phone" placeholder="+1 555 010 2024" autocomplete="tel" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="reg-password">Password</label>
+                <input type="password" id="reg-password" name="password" placeholder="Create a password" autocomplete="new-password" required>
+              </div>
+              <div class="field">
+                <label for="reg-confirm">Confirm password</label>
+                <input type="password" id="reg-confirm" name="confirm_password" placeholder="Re-enter password" autocomplete="new-password" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+            <p class="terms-note">By registering, you agree to our <a href="legal.html">Terms &amp; Privacy Policy</a>.</p>
+          </form>
+
+          <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 FoodieHub. All rights reserved.</span>
+        <span><a href="legal.html">Terms</a> &middot; <a href="legal.html">Privacy</a></span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
